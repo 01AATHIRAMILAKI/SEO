@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title></title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+	  <div id="banner">
+	    <div id="welcome">
+	     <center><h3 style="font-family:Times New Roman">A System for Keyword based search over Relational
+         Database </h3></center>
+	    </div><!--close welcome-->		    
+	  </div><!--close banner-->
+    </header>
+
+	<nav>
+	  <div id="menubar">
+        <ul id="nav">
+          <li class="current"><a href="Home.aspx">Home</a></li>
+        <li class="current"><a href="adminlogin.aspx">Login</a></li>
+          <li class="current"><a href="userrecord.aspx">User Record</a></li>
+           <li class="current"><a href="uploadkeyword.aspx">Upload Keyword</a></li>
+    
+            
+             <li class="current"><a href="keyword1.aspx">Key Detail</a></li>
+            
+             <li class="current"><a href="Home.aspx">Log Out</a></li>
+        </ul>
+      </div><!--close menubar-->	
+    </nav>	
+    <div id="site_content">	
+
+      <div class="slideshow">
+	    <ul class="slideshow">
+          <li class="show"><img width="900" height="250" src="images/seo-keywords.jpg" alt="&quot;Enter your caption here&quot;" /></li>
+          <li><img width="900" height="250" src="images/home_2.jpg" alt="&quot;Enter your caption here&quot;" /></li>
+        </ul> 
+	  </div>	
+	
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+		 
+</body>
+
+</html>
